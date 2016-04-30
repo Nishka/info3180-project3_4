@@ -1,0 +1,24 @@
+{% extends 'bits/base.html'%}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block main %}
+    <div style="position: relative; margin: 0 auto;">
+          <div style="position: relative; margin: 0 auto; width: 100%;">
+            <p class="hmtitle" style="text-align: center;">
+                START BUILDING YOUR WISHLIST
+            </p>
+            <div class="btncont">
+                <a href="/api/user/register/"><button class="btn tkbtn" >Register</button></a>
+                <a href="/api/user/login/"><button class="btn tkbtn" >Login</button></a>
+                {% if error %}
+                        <p class=error><strong>Error:</strong> {{ error }}
+                      {% endif %}
+            </div>
+          </div>
+    </div>
+    
+{% endblock %}
+

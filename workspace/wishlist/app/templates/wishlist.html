@@ -1,0 +1,17 @@
+{% extends 'bits/base.html'%}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block main %}
+    <div style="position: relative; margin: 0 auto;">
+        {% if error %}
+            <p class=error><strong>Error:</strong> {{ error }}
+        {% endif %}
+        <div class="form_pieces">
+           <label class="lable">First Name</label>
+           <input type="text" name="firstname" id="firstname"/>
+        </div>
+    </div>
+{% endblock %}

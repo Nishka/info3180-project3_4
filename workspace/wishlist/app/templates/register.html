@@ -1,0 +1,43 @@
+{% extends 'bits/base.html'%}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block main %}
+    <div style="position: relative; margin: 0 auto;">
+          <form method="post" action="/api/user/register/">
+              <legend>Register</legend>
+              <fieldset>
+                  <div class="form_pieces">
+                      <label class="lable">First Name</label>
+                      <input type="text" name="firstname" id="firstname"/>
+                  </div>
+                  <div class="form_pieces">
+                      <label class="lable">Last Name</label>
+                      <input type="text" name="lastname" id="lastname"/>
+                  </div>
+                  <div class="form_pieces">
+                      <label class="lable">Email</label>
+                      <input type="email" name="email" id="email"/>
+                  </div>
+                  <div class="form_pieces">
+                      <label class="lable">Password</label>
+                      <input type="password" name="password" id="password"/>
+                  </div>
+                  <div class="form_pieces">
+                      <label class="lable">Confirm Password</label>
+                      <input type="password" name="password_conf" id="password_conf"/>
+                  </div>
+                  <div class="form_pieces">
+                      <button class="btn tkbtn submit_reg" name="submit" id="submit_reg" type="submit">Submit</button>
+                      {% if error %}
+                        <p class=error><strong>Error:</strong> {{ error }}
+                      {% endif %}
+                  </div>
+              </fieldset>
+              <legend></legend>
+          </form>
+    </div>
+    
+{% endblock %}

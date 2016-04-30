@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+  <title>{% block title %}{{ title }}{% endblock %}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}">
+
+  <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  {% block css %}
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-theme.min.css')}}">
+  <link rel="stylesheet/less" href="{{url_for('static',filename='css/main.less')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  {% endblock %}
+
+  <!-- Rather use `less.js` to dynamically compile your `stylesheet/less` files? -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js"></script>
+  <script>window.less || document.write('<script src="../static/js/less.js">\x3C/script>')</script>
+
+  <!-- Need Modernizr? Uncomment the following script. -->
+  <!-- <script src="../static/js/modernizr.js"></script> -->

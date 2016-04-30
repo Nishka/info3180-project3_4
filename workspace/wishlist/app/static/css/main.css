@@ -1,0 +1,63 @@
+#header
+{
+    width: 100%;
+    color:#428bca;
+    font-size: 20px;
+}
+
+#main
+{
+    height: 80%;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 900px;
+}
+
+.navbar-right
+{
+    margin-right: 150px;
+}
+
+.navbar-left
+{
+    margin-left: 410px;
+}
+
+#container
+{
+    top: 90px;
+    position: relative;
+    min-height: 800px;
+    background-color: rgba(170, 201, 255, 0.18);
+    
+}
+
+.hmtitle
+{
+        font-size: 40px;
+}
+
+.tkbtn
+{
+    
+}
+
+.btncont
+{
+    text-align: center;
+}
+
+.form_pieces
+{
+    text-align: center;
+}
+.submit_reg
+{
+    text-align: right;
+}
+
+.lable
+{
+        text-align: left;
+    width: 125px;
+}
